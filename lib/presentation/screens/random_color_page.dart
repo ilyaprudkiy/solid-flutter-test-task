@@ -19,10 +19,13 @@ class _RandomColorPageState extends State<RandomColorPage> {
       onTap: _changeNewColor,
       child: Scaffold(
         backgroundColor: backgroundColor,
-        body: const Center(
-          child: Text(
-            'Hello there',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+        body: AnimatedContainer(
+          duration: const Duration(milliseconds: 400),
+          child: const Center(
+            child: Text(
+              'Hello there',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            ),
           ),
         ),
       ),
